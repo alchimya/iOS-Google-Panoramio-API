@@ -56,7 +56,7 @@
         RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
         
         NSArray*descriptors;
-        //User descriptors
+        //PanoramioPhoto descriptors
         descriptors=[PanoramioPhotoRKHelper getResponseDescriptors];
         //add descriptors
         [self addResponseDescriptors:descriptors toObjectManager:objectManager];
