@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA583CC71B1B092D008DA72E /* PanoramioPhotoRKHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DA583CC61B1B092D008DA72E /* PanoramioPhotoRKHelper.m */; };
+		DA583CCA1B1B0B06008DA72E /* PanoramioPhotoMapRK.m in Sources */ = {isa = PBXBuildFile; fileRef = DA583CC91B1B0B06008DA72E /* PanoramioPhotoMapRK.m */; };
+		DA583CCD1B1B0E49008DA72E /* HTTPPanoramioRK.m in Sources */ = {isa = PBXBuildFile; fileRef = DA583CCC1B1B0E49008DA72E /* HTTPPanoramioRK.m */; };
+		DA583CD21B1B126E008DA72E /* L3SDKAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA583CD11B1B126E008DA72E /* L3SDKAlertView.m */; };
+		DA583CD81B1B1453008DA72E /* L3SDKUtilityApp.m in Sources */ = {isa = PBXBuildFile; fileRef = DA583CD71B1B1453008DA72E /* L3SDKUtilityApp.m */; };
+		DA583CDF1B1B7600008DA72E /* L3SDKUtilityValidators.m in Sources */ = {isa = PBXBuildFile; fileRef = DA583CDE1B1B7600008DA72E /* L3SDKUtilityValidators.m */; };
+		DA583CE11B1B7E56008DA72E /* tramonto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA583CE01B1B7E56008DA72E /* tramonto.jpg */; };
+		DA5C445B1B177B9D00F35862 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5C445A1B177B9D00F35862 /* CoreLocation.framework */; };
+		DA5C445F1B17810C00F35862 /* L3SDKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5C445E1B17810C00F35862 /* L3SDKTextField.m */; };
+		DA5E6ED61B17438900D462EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5E6ED51B17438900D462EA /* main.m */; };
+		DA5E6ED91B17438900D462EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5E6ED81B17438900D462EA /* AppDelegate.m */; };
+		DA5E6EDC1B17438900D462EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5E6EDB1B17438900D462EA /* ViewController.m */; };
+		DA5E6EDF1B17438900D462EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA5E6EDD1B17438900D462EA /* Main.storyboard */; };
+		DA5E6EE11B17438900D462EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA5E6EE01B17438900D462EA /* Images.xcassets */; };
+		DA5E6EE41B17438A00D462EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA5E6EE21B17438A00D462EA /* LaunchScreen.xib */; };
+		DA5E6EF01B17438A00D462EA /* iOS_Google_Panoramio_APITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5E6EEF1B17438A00D462EA /* iOS_Google_Panoramio_APITests.m */; };
+		DA5E6F041B1747D800D462EA /* L3SDKWGS84.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5E6F031B1747D800D462EA /* L3SDKWGS84.m */; };
+		DA5E6F071B174EB700D462EA /* L3SDKTrigonometry.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5E6F061B174EB700D462EA /* L3SDKTrigonometry.m */; };
+		DA5E6F0C1B174FDE00D462EA /* L3SDKPanoramioHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5E6F0B1B174FDE00D462EA /* L3SDKPanoramioHelper.m */; };
+		DA5E6F0E1B17504B00D462EA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5E6F0D1B17504B00D462EA /* MapKit.framework */; };
+		DA5E6F111B17559900D462EA /* L3SDKPanoramioAPIOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5E6F101B17559900D462EA /* L3SDKPanoramioAPIOptions.m */; };
+		DA614FA51B19C49700D6A19E /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA614F9A1B19C37700D6A19E /* libRestKit.a */; };
+		DA614FA71B19C4B000D6A19E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA614FA61B19C4B000D6A19E /* CFNetwork.framework */; };
+		DA614FA91B19C4B900D6A19E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA614FA81B19C4B900D6A19E /* CoreData.framework */; };
+		DA614FAB1B19C4C600D6A19E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA614FAA1B19C4C600D6A19E /* MobileCoreServices.framework */; };
+		DA614FAD1B19C4CE00D6A19E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA614FAC1B19C4CE00D6A19E /* Security.framework */; };
+		DA614FAF1B19C4D500D6A19E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA614FAE1B19C4D500D6A19E /* SystemConfiguration.framework */; };
+		DA614FDE1B1A234000D6A19E /* RESTSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = DA614FB41B1A234000D6A19E /* RESTSDK.m */; };
+		DA614FDF1B1A234000D6A19E /* RESTSDKConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DA614FB61B1A234000D6A19E /* RESTSDKConfig.m */; };
+		DA614FE71B1A234000D6A19E /* RKHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DA614FCA1B1A234000D6A19E /* RKHelper.m */; };
+		DA614FF21B1A2CF700D6A19E /* L3SDKPanoramioPanoramas.m in Sources */ = {isa = PBXBuildFile; fileRef = DA614FF11B1A2CF700D6A19E /* L3SDKPanoramioPanoramas.m */; };
+		DA614FF51B1A2D0300D6A19E /* L3SDKPanoramioPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = DA614FF41B1A2D0300D6A19E /* L3SDKPanoramioPhoto.m */; };
+		DA614FF91B1A2FA100D6A19E /* L3SDKPanoramioMapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA614FF81B1A2FA100D6A19E /* L3SDKPanoramioMapLocation.m */; };
+		DAC5B7F81B1C80FF00E7B900 /* L3SDKImagesSlideShow.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC5B7F71B1C80FF00E7B900 /* L3SDKImagesSlideShow.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA5E6EEA1B17438A00D462EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA5E6EC81B17438900D462EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA5E6ECF1B17438900D462EA;
+			remoteInfo = "iOS-Google-Panoramio-API";
+		};
+		DA614F991B19C37700D6A19E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA614F921B19C37700D6A19E /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		DA614F9B1B19C37700D6A19E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA614F921B19C37700D6A19E /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		DA614F9D1B19C37700D6A19E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA614F921B19C37700D6A19E /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		DA614F9F1B19C37700D6A19E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA614F921B19C37700D6A19E /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		DA614FA31B19C48300D6A19E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA614F921B19C37700D6A19E /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA583CC51B1B092D008DA72E /* PanoramioPhotoRKHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanoramioPhotoRKHelper.h; sourceTree = "<group>"; };
+		DA583CC61B1B092D008DA72E /* PanoramioPhotoRKHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanoramioPhotoRKHelper.m; sourceTree = "<group>"; };
+		DA583CC81B1B0B06008DA72E /* PanoramioPhotoMapRK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanoramioPhotoMapRK.h; sourceTree = "<group>"; };
+		DA583CC91B1B0B06008DA72E /* PanoramioPhotoMapRK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanoramioPhotoMapRK.m; sourceTree = "<group>"; };
+		DA583CCB1B1B0E49008DA72E /* HTTPPanoramioRK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPPanoramioRK.h; sourceTree = "<group>"; };
+		DA583CCC1B1B0E49008DA72E /* HTTPPanoramioRK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPPanoramioRK.m; sourceTree = "<group>"; };
+		DA583CD01B1B126E008DA72E /* L3SDKAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKAlertView.h; sourceTree = "<group>"; };
+		DA583CD11B1B126E008DA72E /* L3SDKAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKAlertView.m; sourceTree = "<group>"; };
+		DA583CD61B1B1453008DA72E /* L3SDKUtilityApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKUtilityApp.h; sourceTree = "<group>"; };
+		DA583CD71B1B1453008DA72E /* L3SDKUtilityApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKUtilityApp.m; sourceTree = "<group>"; };
+		DA583CDD1B1B7600008DA72E /* L3SDKUtilityValidators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKUtilityValidators.h; sourceTree = "<group>"; };
+		DA583CDE1B1B7600008DA72E /* L3SDKUtilityValidators.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKUtilityValidators.m; sourceTree = "<group>"; };
+		DA583CE01B1B7E56008DA72E /* tramonto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tramonto.jpg; path = ../../../../../../Users/domenicovacchiano/Desktop/tramonto.jpg; sourceTree = "<group>"; };
+		DA5C445A1B177B9D00F35862 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DA5C445D1B17810C00F35862 /* L3SDKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKTextField.h; sourceTree = "<group>"; };
+		DA5C445E1B17810C00F35862 /* L3SDKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKTextField.m; sourceTree = "<group>"; };
+		DA5E6ED01B17438900D462EA /* iOS-Google-Panoramio-API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Google-Panoramio-API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5E6ED41B17438900D462EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA5E6ED51B17438900D462EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA5E6ED71B17438900D462EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA5E6ED81B17438900D462EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA5E6EDA1B17438900D462EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DA5E6EDB1B17438900D462EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DA5E6EDE1B17438900D462EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA5E6EE01B17438900D462EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA5E6EE31B17438A00D462EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DA5E6EE91B17438A00D462EA /* iOS-Google-Panoramio-APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-Google-Panoramio-APITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5E6EEE1B17438A00D462EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA5E6EEF1B17438A00D462EA /* iOS_Google_Panoramio_APITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Google_Panoramio_APITests.m; sourceTree = "<group>"; };
+		DA5E6F021B1747D800D462EA /* L3SDKWGS84.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKWGS84.h; sourceTree = "<group>"; };
+		DA5E6F031B1747D800D462EA /* L3SDKWGS84.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKWGS84.m; sourceTree = "<group>"; };
+		DA5E6F051B174EB700D462EA /* L3SDKTrigonometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKTrigonometry.h; sourceTree = "<group>"; };
+		DA5E6F061B174EB700D462EA /* L3SDKTrigonometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKTrigonometry.m; sourceTree = "<group>"; };
+		DA5E6F0A1B174FDE00D462EA /* L3SDKPanoramioHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKPanoramioHelper.h; sourceTree = "<group>"; };
+		DA5E6F0B1B174FDE00D462EA /* L3SDKPanoramioHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKPanoramioHelper.m; sourceTree = "<group>"; };
+		DA5E6F0D1B17504B00D462EA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DA5E6F0F1B17559900D462EA /* L3SDKPanoramioAPIOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKPanoramioAPIOptions.h; sourceTree = "<group>"; };
+		DA5E6F101B17559900D462EA /* L3SDKPanoramioAPIOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKPanoramioAPIOptions.m; sourceTree = "<group>"; };
+		DA614F921B19C37700D6A19E /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = "iOS-Google-Panoramio-API/RestKit/RestKit.xcodeproj"; sourceTree = "<group>"; };
+		DA614FA61B19C4B000D6A19E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DA614FA81B19C4B900D6A19E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DA614FAA1B19C4C600D6A19E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DA614FAC1B19C4CE00D6A19E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DA614FAE1B19C4D500D6A19E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DA614FB31B1A234000D6A19E /* RESTSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTSDK.h; sourceTree = "<group>"; };
+		DA614FB41B1A234000D6A19E /* RESTSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTSDK.m; sourceTree = "<group>"; };
+		DA614FB51B1A234000D6A19E /* RESTSDKConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTSDKConfig.h; sourceTree = "<group>"; };
+		DA614FB61B1A234000D6A19E /* RESTSDKConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESTSDKConfig.m; sourceTree = "<group>"; };
+		DA614FB81B1A234000D6A19E /* RESTRoutes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESTRoutes.h; sourceTree = "<group>"; };
+		DA614FC91B1A234000D6A19E /* RKHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKHelper.h; sourceTree = "<group>"; };
+		DA614FCA1B1A234000D6A19E /* RKHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKHelper.m; sourceTree = "<group>"; };
+		DA614FD21B1A234000D6A19E /* HTTPRequestCallbackProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestCallbackProtocol.h; sourceTree = "<group>"; };
+		DA614FF01B1A2CF700D6A19E /* L3SDKPanoramioPanoramas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKPanoramioPanoramas.h; sourceTree = "<group>"; };
+		DA614FF11B1A2CF700D6A19E /* L3SDKPanoramioPanoramas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKPanoramioPanoramas.m; sourceTree = "<group>"; };
+		DA614FF31B1A2D0300D6A19E /* L3SDKPanoramioPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKPanoramioPhoto.h; sourceTree = "<group>"; };
+		DA614FF41B1A2D0300D6A19E /* L3SDKPanoramioPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKPanoramioPhoto.m; sourceTree = "<group>"; };
+		DA614FF71B1A2FA100D6A19E /* L3SDKPanoramioMapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKPanoramioMapLocation.h; sourceTree = "<group>"; };
+		DA614FF81B1A2FA100D6A19E /* L3SDKPanoramioMapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKPanoramioMapLocation.m; sourceTree = "<group>"; };
+		DAC5B7F61B1C80FF00E7B900 /* L3SDKImagesSlideShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L3SDKImagesSlideShow.h; sourceTree = "<group>"; };
+		DAC5B7F71B1C80FF00E7B900 /* L3SDKImagesSlideShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L3SDKImagesSlideShow.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA5E6ECD1B17438900D462EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA614FAF1B19C4D500D6A19E /* SystemConfiguration.framework in Frameworks */,
+				DA614FAD1B19C4CE00D6A19E /* Security.framework in Frameworks */,
+				DA614FAB1B19C4C600D6A19E /* MobileCoreServices.framework in Frameworks */,
+				DA614FA91B19C4B900D6A19E /* CoreData.framework in Frameworks */,
+				DA614FA71B19C4B000D6A19E /* CFNetwork.framework in Frameworks */,
+				DA614FA51B19C49700D6A19E /* libRestKit.a in Frameworks */,
+				DA5C445B1B177B9D00F35862 /* CoreLocation.framework in Frameworks */,
+				DA5E6F0E1B17504B00D462EA /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5E6EE61B17438A00D462EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA583CCF1B1B126E008DA72E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA583CD01B1B126E008DA72E /* L3SDKAlertView.h */,
+				DA583CD11B1B126E008DA72E /* L3SDKAlertView.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DA5C445C1B17810C00F35862 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DAC5B7F61B1C80FF00E7B900 /* L3SDKImagesSlideShow.h */,
+				DAC5B7F71B1C80FF00E7B900 /* L3SDKImagesSlideShow.m */,
+				DA5C445D1B17810C00F35862 /* L3SDKTextField.h */,
+				DA5C445E1B17810C00F35862 /* L3SDKTextField.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		DA5E6EC71B17438900D462EA = {
+			isa = PBXGroup;
+			children = (
+				DA614FAE1B19C4D500D6A19E /* SystemConfiguration.framework */,
+				DA614FAC1B19C4CE00D6A19E /* Security.framework */,
+				DA614FAA1B19C4C600D6A19E /* MobileCoreServices.framework */,
+				DA614FA81B19C4B900D6A19E /* CoreData.framework */,
+				DA614FA61B19C4B000D6A19E /* CFNetwork.framework */,
+				DA614F921B19C37700D6A19E /* RestKit.xcodeproj */,
+				DA5C445A1B177B9D00F35862 /* CoreLocation.framework */,
+				DA5E6F0D1B17504B00D462EA /* MapKit.framework */,
+				DA5E6ED21B17438900D462EA /* iOS-Google-Panoramio-API */,
+				DA5E6EEC1B17438A00D462EA /* iOS-Google-Panoramio-APITests */,
+				DA5E6ED11B17438900D462EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA5E6ED11B17438900D462EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA5E6ED01B17438900D462EA /* iOS-Google-Panoramio-API.app */,
+				DA5E6EE91B17438A00D462EA /* iOS-Google-Panoramio-APITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA5E6ED21B17438900D462EA /* iOS-Google-Panoramio-API */ = {
+			isa = PBXGroup;
+			children = (
+				DA583CE01B1B7E56008DA72E /* tramonto.jpg */,
+				DA5E6EF91B1743F800D462EA /* L3SDK */,
+				DA614FB11B1A234000D6A19E /* RESTSDK */,
+				DA5E6ED71B17438900D462EA /* AppDelegate.h */,
+				DA5E6ED81B17438900D462EA /* AppDelegate.m */,
+				DA5E6EDA1B17438900D462EA /* ViewController.h */,
+				DA5E6EDB1B17438900D462EA /* ViewController.m */,
+				DA5E6EDD1B17438900D462EA /* Main.storyboard */,
+				DA5E6EE01B17438900D462EA /* Images.xcassets */,
+				DA5E6EE21B17438A00D462EA /* LaunchScreen.xib */,
+				DA5E6ED31B17438900D462EA /* Supporting Files */,
+			);
+			path = "iOS-Google-Panoramio-API";
+			sourceTree = "<group>";
+		};
+		DA5E6ED31B17438900D462EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA5E6ED41B17438900D462EA /* Info.plist */,
+				DA5E6ED51B17438900D462EA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA5E6EEC1B17438A00D462EA /* iOS-Google-Panoramio-APITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA5E6EEF1B17438A00D462EA /* iOS_Google_Panoramio_APITests.m */,
+				DA5E6EED1B17438A00D462EA /* Supporting Files */,
+			);
+			path = "iOS-Google-Panoramio-APITests";
+			sourceTree = "<group>";
+		};
+		DA5E6EED1B17438A00D462EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA5E6EEE1B17438A00D462EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA5E6EF91B1743F800D462EA /* L3SDK */ = {
+			isa = PBXGroup;
+			children = (
+				DA583CCF1B1B126E008DA72E /* Extensions */,
+				DA5C445C1B17810C00F35862 /* UIKit */,
+				DA5E6EFF1B17479900D462EA /* Utility */,
+				DA5E6EFA1B1743F800D462EA /* Helpers */,
+			);
+			path = L3SDK;
+			sourceTree = "<group>";
+		};
+		DA5E6EFA1B1743F800D462EA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DA5E6F081B174FD100D462EA /* Google */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DA5E6EFF1B17479900D462EA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DA583CDD1B1B7600008DA72E /* L3SDKUtilityValidators.h */,
+				DA583CDE1B1B7600008DA72E /* L3SDKUtilityValidators.m */,
+				DA583CD61B1B1453008DA72E /* L3SDKUtilityApp.h */,
+				DA583CD71B1B1453008DA72E /* L3SDKUtilityApp.m */,
+				DA5E6F001B17479900D462EA /* Earth */,
+				DA5E6F011B17479900D462EA /* Math */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		DA5E6F001B17479900D462EA /* Earth */ = {
+			isa = PBXGroup;
+			children = (
+				DA5E6F021B1747D800D462EA /* L3SDKWGS84.h */,
+				DA5E6F031B1747D800D462EA /* L3SDKWGS84.m */,
+			);
+			path = Earth;
+			sourceTree = "<group>";
+		};
+		DA5E6F011B17479900D462EA /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				DA5E6F051B174EB700D462EA /* L3SDKTrigonometry.h */,
+				DA5E6F061B174EB700D462EA /* L3SDKTrigonometry.m */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		DA5E6F081B174FD100D462EA /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				DA5E6F091B174FD100D462EA /* Panoramio */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
+		DA5E6F091B174FD100D462EA /* Panoramio */ = {
+			isa = PBXGroup;
+			children = (
+				DA5E6F0A1B174FDE00D462EA /* L3SDKPanoramioHelper.h */,
+				DA5E6F0B1B174FDE00D462EA /* L3SDKPanoramioHelper.m */,
+				DA5E6F0F1B17559900D462EA /* L3SDKPanoramioAPIOptions.h */,
+				DA5E6F101B17559900D462EA /* L3SDKPanoramioAPIOptions.m */,
+				DA614FF01B1A2CF700D6A19E /* L3SDKPanoramioPanoramas.h */,
+				DA614FF11B1A2CF700D6A19E /* L3SDKPanoramioPanoramas.m */,
+				DA614FF31B1A2D0300D6A19E /* L3SDKPanoramioPhoto.h */,
+				DA614FF41B1A2D0300D6A19E /* L3SDKPanoramioPhoto.m */,
+				DA614FF71B1A2FA100D6A19E /* L3SDKPanoramioMapLocation.h */,
+				DA614FF81B1A2FA100D6A19E /* L3SDKPanoramioMapLocation.m */,
+			);
+			path = Panoramio;
+			sourceTree = "<group>";
+		};
+		DA614F931B19C37700D6A19E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA614F9A1B19C37700D6A19E /* libRestKit.a */,
+				DA614F9C1B19C37700D6A19E /* RestKitTests.xctest */,
+				DA614F9E1B19C37700D6A19E /* RestKit.framework */,
+				DA614FA01B19C37700D6A19E /* RestKitFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA614FB11B1A234000D6A19E /* RESTSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DA614FB21B1A234000D6A19E /* Config */,
+				DA614FB71B1A234000D6A19E /* Const */,
+				DA614FC21B1A234000D6A19E /* Helpers */,
+				DA614FCD1B1A234000D6A19E /* HTTPRequests */,
+				DA614FD51B1A234000D6A19E /* Mappings */,
+			);
+			path = RESTSDK;
+			sourceTree = "<group>";
+		};
+		DA614FB21B1A234000D6A19E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DA614FB31B1A234000D6A19E /* RESTSDK.h */,
+				DA614FB41B1A234000D6A19E /* RESTSDK.m */,
+				DA614FB51B1A234000D6A19E /* RESTSDKConfig.h */,
+				DA614FB61B1A234000D6A19E /* RESTSDKConfig.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		DA614FB71B1A234000D6A19E /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				DA614FB81B1A234000D6A19E /* RESTRoutes.h */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		DA614FC21B1A234000D6A19E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DA614FC91B1A234000D6A19E /* RKHelper.h */,
+				DA614FCA1B1A234000D6A19E /* RKHelper.m */,
+				DA583CC51B1B092D008DA72E /* PanoramioPhotoRKHelper.h */,
+				DA583CC61B1B092D008DA72E /* PanoramioPhotoRKHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DA614FCD1B1A234000D6A19E /* HTTPRequests */ = {
+			isa = PBXGroup;
+			children = (
+				DA614FD21B1A234000D6A19E /* HTTPRequestCallbackProtocol.h */,
+				DA583CCB1B1B0E49008DA72E /* HTTPPanoramioRK.h */,
+				DA583CCC1B1B0E49008DA72E /* HTTPPanoramioRK.m */,
+			);
+			path = HTTPRequests;
+			sourceTree = "<group>";
+		};
+		DA614FD51B1A234000D6A19E /* Mappings */ = {
+			isa = PBXGroup;
+			children = (
+				DA583CC81B1B0B06008DA72E /* PanoramioPhotoMapRK.h */,
+				DA583CC91B1B0B06008DA72E /* PanoramioPhotoMapRK.m */,
+			);
+			path = Mappings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA5E6ECF1B17438900D462EA /* iOS-Google-Panoramio-API */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA5E6EF31B17438A00D462EA /* Build configuration list for PBXNativeTarget "iOS-Google-Panoramio-API" */;
+			buildPhases = (
+				DA5E6ECC1B17438900D462EA /* Sources */,
+				DA5E6ECD1B17438900D462EA /* Frameworks */,
+				DA5E6ECE1B17438900D462EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA614FA41B19C48300D6A19E /* PBXTargetDependency */,
+			);
+			name = "iOS-Google-Panoramio-API";
+			productName = "iOS-Google-Panoramio-API";
+			productReference = DA5E6ED01B17438900D462EA /* iOS-Google-Panoramio-API.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA5E6EE81B17438A00D462EA /* iOS-Google-Panoramio-APITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA5E6EF61B17438A00D462EA /* Build configuration list for PBXNativeTarget "iOS-Google-Panoramio-APITests" */;
+			buildPhases = (
+				DA5E6EE51B17438A00D462EA /* Sources */,
+				DA5E6EE61B17438A00D462EA /* Frameworks */,
+				DA5E6EE71B17438A00D462EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA5E6EEB1B17438A00D462EA /* PBXTargetDependency */,
+			);
+			name = "iOS-Google-Panoramio-APITests";
+			productName = "iOS-Google-Panoramio-APITests";
+			productReference = DA5E6EE91B17438A00D462EA /* iOS-Google-Panoramio-APITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA5E6EC81B17438900D462EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = DomenicoVacchiano;
+				TargetAttributes = {
+					DA5E6ECF1B17438900D462EA = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					DA5E6EE81B17438A00D462EA = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = DA5E6ECF1B17438900D462EA;
+					};
+				};
+			};
+			buildConfigurationList = DA5E6ECB1B17438900D462EA /* Build configuration list for PBXProject "iOS-Google-Panoramio-API" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA5E6EC71B17438900D462EA;
+			productRefGroup = DA5E6ED11B17438900D462EA /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DA614F931B19C37700D6A19E /* Products */;
+					ProjectRef = DA614F921B19C37700D6A19E /* RestKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				DA5E6ECF1B17438900D462EA /* iOS-Google-Panoramio-API */,
+				DA5E6EE81B17438A00D462EA /* iOS-Google-Panoramio-APITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DA614F9A1B19C37700D6A19E /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = DA614F991B19C37700D6A19E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA614F9C1B19C37700D6A19E /* RestKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.xctest;
+			remoteRef = DA614F9B1B19C37700D6A19E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA614F9E1B19C37700D6A19E /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = DA614F9D1B19C37700D6A19E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA614FA01B19C37700D6A19E /* RestKitFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.xctest;
+			remoteRef = DA614F9F1B19C37700D6A19E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA5E6ECE1B17438900D462EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA5E6EDF1B17438900D462EA /* Main.storyboard in Resources */,
+				DA5E6EE41B17438A00D462EA /* LaunchScreen.xib in Resources */,
+				DA5E6EE11B17438900D462EA /* Images.xcassets in Resources */,
+				DA583CE11B1B7E56008DA72E /* tramonto.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5E6EE71B17438A00D462EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA5E6ECC1B17438900D462EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA614FF91B1A2FA100D6A19E /* L3SDKPanoramioMapLocation.m in Sources */,
+				DA5E6EDC1B17438900D462EA /* ViewController.m in Sources */,
+				DA614FF51B1A2D0300D6A19E /* L3SDKPanoramioPhoto.m in Sources */,
+				DA583CD21B1B126E008DA72E /* L3SDKAlertView.m in Sources */,
+				DA5E6F041B1747D800D462EA /* L3SDKWGS84.m in Sources */,
+				DA5E6F0C1B174FDE00D462EA /* L3SDKPanoramioHelper.m in Sources */,
+				DA583CCD1B1B0E49008DA72E /* HTTPPanoramioRK.m in Sources */,
+				DA614FE71B1A234000D6A19E /* RKHelper.m in Sources */,
+				DA5E6F071B174EB700D462EA /* L3SDKTrigonometry.m in Sources */,
+				DA5E6F111B17559900D462EA /* L3SDKPanoramioAPIOptions.m in Sources */,
+				DAC5B7F81B1C80FF00E7B900 /* L3SDKImagesSlideShow.m in Sources */,
+				DA583CDF1B1B7600008DA72E /* L3SDKUtilityValidators.m in Sources */,
+				DA5C445F1B17810C00F35862 /* L3SDKTextField.m in Sources */,
+				DA583CD81B1B1453008DA72E /* L3SDKUtilityApp.m in Sources */,
+				DA614FF21B1A2CF700D6A19E /* L3SDKPanoramioPanoramas.m in Sources */,
+				DA583CC71B1B092D008DA72E /* PanoramioPhotoRKHelper.m in Sources */,
+				DA614FDF1B1A234000D6A19E /* RESTSDKConfig.m in Sources */,
+				DA583CCA1B1B0B06008DA72E /* PanoramioPhotoMapRK.m in Sources */,
+				DA614FDE1B1A234000D6A19E /* RESTSDK.m in Sources */,
+				DA5E6ED91B17438900D462EA /* AppDelegate.m in Sources */,
+				DA5E6ED61B17438900D462EA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5E6EE51B17438A00D462EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA5E6EF01B17438A00D462EA /* iOS_Google_Panoramio_APITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA5E6EEB1B17438A00D462EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA5E6ECF1B17438900D462EA /* iOS-Google-Panoramio-API */;
+			targetProxy = DA5E6EEA1B17438A00D462EA /* PBXContainerItemProxy */;
+		};
+		DA614FA41B19C48300D6A19E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = DA614FA31B19C48300D6A19E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA5E6EDD1B17438900D462EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA5E6EDE1B17438900D462EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA5E6EE21B17438A00D462EA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA5E6EE31B17438A00D462EA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA5E6EF11B17438A00D462EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA5E6EF21B17438A00D462EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA5E6EF41B17438A00D462EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
+				INFOPLIST_FILE = "iOS-Google-Panoramio-API/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DA5E6EF51B17438A00D462EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(BUILT_PRODUCTS_DIR)/../../Headers\"",
+				);
+				INFOPLIST_FILE = "iOS-Google-Panoramio-API/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DA5E6EF71B17438A00D462EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS-Google-Panoramio-APITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Google-Panoramio-API.app/iOS-Google-Panoramio-API";
+			};
+			name = Debug;
+		};
+		DA5E6EF81B17438A00D462EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOS-Google-Panoramio-APITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Google-Panoramio-API.app/iOS-Google-Panoramio-API";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA5E6ECB1B17438900D462EA /* Build configuration list for PBXProject "iOS-Google-Panoramio-API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA5E6EF11B17438A00D462EA /* Debug */,
+				DA5E6EF21B17438A00D462EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA5E6EF31B17438A00D462EA /* Build configuration list for PBXNativeTarget "iOS-Google-Panoramio-API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA5E6EF41B17438A00D462EA /* Debug */,
+				DA5E6EF51B17438A00D462EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA5E6EF61B17438A00D462EA /* Build configuration list for PBXNativeTarget "iOS-Google-Panoramio-APITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA5E6EF71B17438A00D462EA /* Debug */,
+				DA5E6EF81B17438A00D462EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA5E6EC81B17438900D462EA /* Project object */;
+}
