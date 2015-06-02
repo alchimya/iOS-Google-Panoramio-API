@@ -11,9 +11,6 @@
 
 @implementation RESTSDKConfig
 
-
-@synthesize accountId;
-@synthesize apiKey;
 @synthesize remoteHost;
 
 -(id)initWithRemoteHost:(NSString*)host{

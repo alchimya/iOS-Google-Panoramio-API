@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>71EA9078-3989-4369-B68F-8D61731D65A1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOS-Google-Panoramio-API</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>073E18D4C85BD7BBEE2CEFBE9DFAF5D517B4923F</key>
+		<string>https://github.com/alchimya/iOS-Google-Panoramio-API.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS-Google-Panoramio-API/iOS-Google-Panoramio-API.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>073E18D4C85BD7BBEE2CEFBE9DFAF5D517B4923F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/alchimya/iOS-Google-Panoramio-API.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>073E18D4C85BD7BBEE2CEFBE9DFAF5D517B4923F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>073E18D4C85BD7BBEE2CEFBE9DFAF5D517B4923F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Google-Panoramio-API</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -12,8 +12,7 @@
 
 @interface RESTSDKConfig : NSObject
 
-@property (nonatomic,strong)NSString*accountId;
-@property (nonatomic,strong)NSString*apiKey;
+
 @property (nonatomic,strong)NSString*remoteHost;
 
 -(id)initWithRemoteHost:(NSString*)host;
